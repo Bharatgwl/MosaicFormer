@@ -1,0 +1,49 @@
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+torch_env/
+
+# Large datasets and token caches
+DATA/*
+!DATA/.gitkeep
+*.npy
+*.npz
+*.bin
+*.idx
+
+# Training checkpoints and model weights
+CHECKPOINT/*
+!CHECKPOINT/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Experiment outputs. Keep generated results locally unless you choose a few
+# small CSV/PNG files for the final report.
+RESULT/*
+!RESULT/.gitkeep
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+wandb/
+runs/
+lightning_logs/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
